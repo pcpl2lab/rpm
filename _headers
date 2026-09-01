@@ -1,0 +1,11 @@
+/repodata/*
+  Cache-Control: no-cache
+
+/packages/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/pcpl2lab.repo
+  Cache-Control: no-cache
+
+/pcpl2lab.gpg
+  Cache-Control: public, max-age=3600

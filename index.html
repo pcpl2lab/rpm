@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>sshforward RPM repository</title>
+<style>
+  body { font-family: system-ui, sans-serif; max-width: 46rem; margin: 3rem auto; padding: 0 1rem; line-height: 1.6; }
+  pre { background: #f4f4f5; padding: 1rem; overflow-x: auto; border-radius: 6px; }
+  code { font-family: ui-monospace, monospace; }
+</style>
+</head>
+<body>
+<h1>sshforward RPM repository</h1>
+<p>Fedora, RHEL and openSUSE packages for
+<a href="https://github.com/pcpl2lab/sshforward">sshforward</a>,
+an SSH port forwarding manager.</p>
+
+<h2>Add the repository</h2>
+<pre><code>sudo curl -fsSL -o /etc/yum.repos.d/pcpl2lab.repo https://rpm.pcpl2lab.ovh/pcpl2lab.repo
+sudo dnf install sshforward</code></pre>
+
+<p>On openSUSE:</p>
+<pre><code>sudo zypper addrepo -f https://rpm.pcpl2lab.ovh pcpl2lab
+sudo zypper install sshforward</code></pre>
+
+<h2>Later updates</h2>
+<pre><code>sudo dnf upgrade sshforward</code></pre>
+
+<p>Packages and repository metadata are both signed.</p>
+</body>
+</html>
